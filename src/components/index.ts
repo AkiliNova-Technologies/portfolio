@@ -1,0 +1,13 @@
+export { Navbar } from "./Navbar";
+export { Hero } from "./Hero";
+export { Marquee } from "./Marquee";
+export { Services } from "./Services";
+export { Skills } from "./Skills";
+export { Projects } from "./Projects";
+export { Philosophy } from "./Philosophy";
+export { Blog } from "./Blog";
+export { Contact } from "./Contact";
+export { Footer } from "./Footer";
+export { FadeIn } from "./FadeIn";
+export { SectionLabel } from "./SectionLabel";
+export { Tag } from "./Tag";
