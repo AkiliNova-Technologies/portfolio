@@ -96,7 +96,7 @@ export const metadata: Metadata = {
   },
 
   alternates: {
-    canonical: "https://albertwatbin.com",
+    canonical: "https://albertwatbin.vercel.app",
   },
 };
 
