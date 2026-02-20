@@ -17,23 +17,88 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "dev.folio | Software Engineer — Scalable Systems Architect",
+  metadataBase: new URL("https://albertwatbin.vercel.app"),
+
+  title: {
+    default:
+      "Software Engineer | Full Stack Developer | Scalable Web Platforms",
+    template: "%s | Software Engineer Portfolio",
+  },
+
   description:
-    "I engineer structured digital systems that transform ideas into scalable, maintainable platforms. Full-stack development, backend architecture, and platform engineering.",
+    "Full Stack Software Engineer specializing in scalable web platforms, backend API architecture, custom CMS development, admin dashboards, and business workflow systems using Next.js, React, Node.js, PostgreSQL, MongoDB, and Prisma.",
+
   keywords: [
-    "software engineer",
-    "full stack developer",
-    "backend architecture",
-    "platform engineering",
-    "next.js developer",
-    "react developer",
+    "Full Stack Developer",
+    "Software Engineer Portfolio",
+    "Next.js Developer",
+    "React Developer",
+    "Backend API Developer",
+    "Custom CMS Developer",
+    "Dashboard Developer",
+    "Admin Panel Developer",
+    "E-commerce Platform Developer",
+    "Web Application Developer",
+    "Business Website Developer",
+    "Platform Engineering",
+    "Node.js Developer",
+    "MongoDB Developer",
+    "PostgreSQL Developer",
+    "Prisma ORM Developer",
+    "REST API Developer",
+    "Workflow System Developer",
+    "Enterprise Software Developer",
+    "Custom Web Platform Developer"
   ],
+
+  authors: [{ name: "Albert Watbin" }],
+  creator: "Albert Watbin",
+  publisher: "Albert Watbin",
+
   openGraph: {
-    title: "dev.folio | Software Engineer",
-    description: "I Build Scalable Software Systems",
+    title:
+      "Full Stack Software Engineer | Scalable Web Platforms & Backend Architecture",
+    description:
+      "I design and develop scalable web applications, business platforms, custom CMS systems, and backend APIs for startups and organizations.",
+    url: "https://albertwatbin.vercel.app",
+    siteName: "Albert Watbin Portfolio",
+    images: [
+      {
+        url: "/og-image.png",
+        width: 1200,
+        height: 630,
+        alt: "Albert Watbin Software Engineer Portfolio",
+      },
+    ],
+    locale: "en_US",
     type: "website",
   },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Software Engineer | Full Stack Developer",
+    description:
+      "Scalable Web Applications, Backend APIs, CMS Platforms & Business Systems Development.",
+    images: ["/og-image.png"],
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+    },
+  },
+
+  alternates: {
+    canonical: "https://albertwatbin.com",
+  },
 };
+
 
 export default function RootLayout({
   children,
