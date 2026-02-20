@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { DM_Sans, Playfair_Display } from "next/font/google";
 import "./globals.css";
+import StructuredData from "./seo/structured-data";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -108,9 +109,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${playfair.variable}`}>
       <body className="font-sans bg-surface-bg text-content-primary antialiased">
+        
+        <StructuredData />
+        
         <div className="grain-overlay" />
         {children}
+
       </body>
     </html>
   );
 }
+

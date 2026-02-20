@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://albertwatbin.vercel.app/sitemap.xml
