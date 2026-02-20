@@ -49,7 +49,7 @@ export const metadata: Metadata = {
     "REST API Developer",
     "Workflow System Developer",
     "Enterprise Software Developer",
-    "Custom Web Platform Developer"
+    "Custom Web Platform Developer",
   ],
 
   authors: [{ name: "Albert Watbin" }],
@@ -100,7 +100,6 @@ export const metadata: Metadata = {
   },
 };
 
-
 export default function RootLayout({
   children,
 }: {
@@ -109,14 +108,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${dmSans.variable} ${playfair.variable}`}>
       <body className="font-sans bg-surface-bg text-content-primary antialiased">
-        
         <StructuredData />
-        
+
         <div className="grain-overlay" />
         {children}
-
       </body>
     </html>
   );
 }
-

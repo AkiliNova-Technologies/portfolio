@@ -1,15 +1,19 @@
+import Script from "next/script";
+
 export default function StructuredData() {
   return (
-    <script
+    <Script
+      id="person-schema"
       type="application/ld+json"
+      strategy="beforeInteractive"
       dangerouslySetInnerHTML={{
         __html: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Person",
           name: "Albert Watbin",
-          url: "https://albertwatbin.com",
+          url: "https://albertwatbin.vercel.app",
+          image: "https://albertwatbin.vercel.app/og-image.png",
           jobTitle: "Full Stack Software Engineer",
-          image: "https://albertwatbin.com/profile-image.png",
           sameAs: [
             "https://github.com/albert2Moon",
             "https://www.linkedin.com/in/albert-watbin-968282272",
@@ -18,15 +22,14 @@ export default function StructuredData() {
             "Next.js",
             "React",
             "Node.js",
-            "Backend Development",
-            "API Architecture",
             "PostgreSQL",
             "MongoDB",
-            "Platform Engineering",
+            "Prisma ORM",
+            "Backend API Development",
             "CMS Development",
-            "Dashboard Development",
-            "E-commerce Development"
-          ],
+            "Dashboard Systems",
+            "Platform Engineering"
+          ]
         }),
       }}
     />
